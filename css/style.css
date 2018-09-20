@@ -86,7 +86,7 @@
     flex: 1; }
     .form-element .control label {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 15px;
       display: block; }
     .form-element .control input {
       display: block;
@@ -157,7 +157,7 @@ section {
       background: #FFD15C;
       padding: 10px;
       position: relative;
-      font-size: 12px; }
+      font-size: 13px; }
       #ayuda-wrapper .ayuda .texto p:before {
         content: "";
         background: #FFD15C;
