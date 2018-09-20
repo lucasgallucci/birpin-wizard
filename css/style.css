@@ -86,7 +86,7 @@
     flex: 1; }
     .form-element .control label {
       font-weight: 300;
-      font-size: 13px;
+      font-size: 14px;
       display: block; }
     .form-element .control input {
       display: block;
@@ -95,7 +95,8 @@
       border-bottom: 1px solid #ddd;
       font-size: 15px;
       font-weight: 300;
-      margin: 10px 0; }
+      margin: 10px 0;
+      border-radius: 0; }
       .form-element .control input:focus {
         outline: none;
         border-color: #01A8E9; }
