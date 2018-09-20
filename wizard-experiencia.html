@@ -32,25 +32,25 @@
 		<section id="data-informacion">
 			<h2>Datos personales</h2>
 		
-			<div class="form-element">
+			<div class="form-element ok">
 				<div class="status">
-					<img src="img/icon-waiting.svg">
+					<img src="img/icon-ok.svg">
 				</div>
 
 				<div class="control">
 					<label>Teléfono</label>
-					<input type="text" name="">
+					<input type="text" name="" value="155376178">
 				</div>
 			</div>
 
-			<div class="form-element">
+			<div class="form-element error">
 				<div class="status">
-					<img src="img/icon-waiting.svg">
+					<img src="img/icon-error.svg">
 				</div>
 
 				<div class="control">
 					<label>Dirección</label>
-					<input type="text" name="">
+					<input type="text" name="" value="Rivadavia">
 				</div>
 			</div>
 
@@ -67,21 +67,20 @@
 		</section>
 
 		<section id="data-education">
-			<article class="empty-data">
-				<div class="imagen">
-					<img src="img/icon-educacion.svg">
-				</div>
-
-				<div class="texto">
-					<h2>Educación Formal</h2>
-					<p>Agrega tus estudios finalizados o en curso, de esta manera podremos acercarte las ofertas laborales más convenientes para tu perfil.</p>
-					<a class="btn btn-primary" href="#">
-						agregar educación
-					</a>
-
-					<a class="btn btn-link">No poseo educación formal</a>
-				</div>
+			<h2>Educación Formal</h2>
+			<article class="data-container">
+				<h5>Universidad de Morón</h5>
+				<h4>Diseño Gráfico</h4>
+				<p>01/2016 · 03/2017</p>
 			</article>
+
+			<div class="text-center">
+				<a class="btn btn-primary" href="#">
+					agregar educación
+				</a>
+			</div>
+			
+
 		</section>
 
 		<section id="data-experiencia">
@@ -168,10 +167,13 @@
 					</div>
 				</div>
 				
-				<small class="errores">antes de guardar debes corregir los errores</small>
-				<a href="" class="btn btn-primary btn-block" disabled>
+				<div class="text-center">
+					<small class="mensaje-datos">Antes de guardar debes completar todos los datos</small>
+					<a href="" class="btn btn-success" disabled>Guardar experiencia</a>
+				</div>
+				
 					
-				Guardar experiencia</a>
+				
 			</article>
 		</section>
 

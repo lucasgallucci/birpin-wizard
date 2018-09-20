@@ -56,6 +56,13 @@
     margin-bottom: 30px; }
   #wizard .btn-link {
     text-decoration: underline; }
+  #wizard section {
+    border-top: 15px solid rgba(212, 219, 236, 0.4);
+    border-bottom: 15px solid rgba(212, 219, 236, 0.4);
+    padding: 30px; }
+    @media (max-width: 400px) {
+      #wizard section {
+        padding: 30px 15px; } }
 
 #wizard-intro {
   display: flex;
@@ -87,7 +94,7 @@
     flex: 1; }
     .form-element .control label {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 13px;
       display: block;
       color: #777; }
     .form-element .control input {
@@ -102,11 +109,14 @@
       .form-element .control input:focus {
         outline: none;
         border-color: #01A8E9; }
-
-section {
-  border-top: 15px solid rgba(212, 219, 236, 0.4);
-  border-bottom: 15px solid rgba(212, 219, 236, 0.4);
-  padding: 30px 15px; }
+  .form-element.ok .control label {
+    color: #7ED321; }
+  .form-element.ok .control input {
+    border-bottom-color: #7ED321; }
+  .form-element.error .control label {
+    color: #D0021B; }
+  .form-element.error .control input {
+    border-bottom-color: #D0021B; }
 
 #data-basica {
   text-align: center;
@@ -145,11 +155,11 @@ section {
 .well {
   background: white;
   border-radius: 3px;
-  padding: 0; }
+  padding: 0 0 15px 0; }
   .well .well-wrapper {
     padding: 10px; }
   .well .well-title {
-    background: #007DA7;
+    background: #01A8E9;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -163,17 +173,14 @@ section {
     .well .well-title span {
       border: 1px solid white;
       color: white;
-      padding: 5px; }
-  .well .errores {
+      padding: 4px;
+      font-size: 12px; }
+  .well .mensaje-datos {
     display: block;
     font-weight: 300;
     text-align: center;
-    color: #D0021B;
+    color: #666;
     padding: 5px; }
-  .well .btn-primary {
-    border-radius: 0;
-    border: none;
-    padding: 10px 0; }
 
 #ayuda-wrapper {
   position: fixed;

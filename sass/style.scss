@@ -83,6 +83,15 @@ body{
 	.btn-link{
 		text-decoration: underline;
 	}
+
+	section{
+		border-top: 15px solid rgba(212,219,236,0.40);
+		border-bottom: 15px solid rgba(212,219,236,0.40);
+		padding: 30px;
+		@media (max-width: 400px){
+			padding: 30px 15px;
+		}
+	}
 }
 
 
@@ -123,7 +132,7 @@ body{
 		flex: 1;
 		label{
 			font-weight: 300;
-			font-size: 14px;
+			font-size: 13px;
 			display: block;
 			color: #777;
 		}
@@ -143,14 +152,32 @@ body{
 			}
 		}
 	}
+
+	&.ok{
+		.control{
+			label{
+				color: $verde;
+			}
+			input{
+				border-bottom-color: $verde;
+			}
+		}
+	}
+
+	&.error{
+		.control{
+			label{
+				color: $rojo;
+			}
+			input{
+				border-bottom-color: $rojo;
+			}
+		}
+	}
 }
 
 
-section{
-	border-top: 15px solid rgba(212,219,236,0.40);
-	border-bottom: 15px solid rgba(212,219,236,0.40);
-	padding: 30px 15px;
-}
+
 
 #data-basica{
 	text-align: center;
@@ -207,12 +234,12 @@ section{
 .well{
 	background: white;
 	border-radius: 3px;
-	padding: 0;
+	padding: 0 0 15px 0;
 	.well-wrapper{
 		padding: 10px;
 	}
 	.well-title{
-		background: $color2;
+		background: $color3;
 		padding: 10px;
 		display: flex;
 		justify-content: space-between;
@@ -228,21 +255,20 @@ section{
 		span{
 			border: 1px solid white;
 			color: white;
-			padding: 5px;
+			padding: 4px;
+			font-size: 12px;
 		}
 	}
 
-	.errores{
+	.mensaje-datos{
 		display: block;
 		font-weight: 300;
 		text-align: center;
-		color: $rojo;
+		color: #666;
 		padding: 5px;
 	}
 	.btn-primary{
-		border-radius: 0;
-		border: none;
-		padding: 10px 0;
+		
 	}	
 }
 
