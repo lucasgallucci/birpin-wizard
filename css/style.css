@@ -1,0 +1,165 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:400,500,700");
+.gradient-orange {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
+  background: #ff9900;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ff9900 0%, #ec4e21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ff9900 0%, #ec4e21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ff9900 0%, #ec4e21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ec4e21',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.gradient-blue, #wizard-intro {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c6997+0,094074+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007da7+0,094074+100 */
+  background: #007da7;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #007da7 0%, #094074 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #007da7 0%, #094074 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #007da7 0%, #094074 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007da7', endColorstr='#094074',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.gradient-gray {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#555555+0,222222+100 */
+  background: #555555;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #555555 0%, #222222 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #555555 0%, #222222 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #555555 0%, #222222 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#222222',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+#wizard {
+  font-family: "Rubik";
+  color: #3b4858;
+  background: rgba(212, 219, 236, 0.4);
+  padding-bottom: 100px; }
+  #wizard h1 {
+    letter-spacing: -1px;
+    font-size: 28px; }
+  #wizard h2 {
+    font-weight: 400;
+    color: #007DA7;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  #wizard .btn-link {
+    text-decoration: underline; }
+
+#wizard-intro {
+  display: flex;
+  color: white;
+  font-family: "Rubik";
+  justify-content: center;
+  align-items: center; }
+  #wizard-intro .imagen {
+    width: 90px;
+    margin: 10px; }
+  #wizard-intro .texto {
+    max-width: 400px; }
+
+#wizard-main {
+  margin-top: 30px;
+  max-width: 600px;
+  background: white;
+  margin: auto; }
+
+.form-element {
+  display: flex;
+  margin: 10px 0 30px 0;
+  align-items: center; }
+  .form-element .status {
+    margin-right: 10px;
+    width: 25px; }
+  .form-element .control {
+    flex: 1; }
+    .form-element .control label {
+      font-weight: 300;
+      font-size: 13px;
+      display: block; }
+    .form-element .control input {
+      display: block;
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      font-size: 15px;
+      font-weight: 300;
+      margin: 10px 0; }
+      .form-element .control input:focus {
+        outline: none;
+        border-color: #01A8E9; }
+
+section {
+  border-top: 15px solid rgba(212, 219, 236, 0.4);
+  border-bottom: 15px solid rgba(212, 219, 236, 0.4);
+  padding: 30px; }
+
+#data-basica {
+  text-align: center;
+  border-top: 30px solid rgba(212, 219, 236, 0.4); }
+  #data-basica .foto {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: #01A8E9;
+    margin: auto;
+    position: relative; }
+    #data-basica .foto img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      left: 50%; }
+
+#data-education .empty-education {
+  display: flex; }
+  #data-education .empty-education .imagen {
+    margin-right: 15px; }
+  #data-education .empty-education h2 {
+    margin-top: 0; }
+
+#data-experiencia .empty-experiencia {
+  display: flex; }
+  #data-experiencia .empty-experiencia .imagen {
+    margin-right: 15px; }
+  #data-experiencia .empty-experiencia h2 {
+    margin-top: 0; }
+
+#ayuda-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  #ayuda-wrapper .ayuda {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end; }
+    #ayuda-wrapper .ayuda .imagen {
+      margin-right: 15px; }
+    #ayuda-wrapper .ayuda .texto p {
+      background: #FFD15C;
+      padding: 10px;
+      position: relative;
+      font-size: 12px; }
+      #ayuda-wrapper .ayuda .texto p:before {
+        content: "";
+        background: #FFD15C;
+        width: 10px;
+        height: 10px;
+        background: #FFD15C;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        left: 0px; }
+
+/*# sourceMappingURL=style.css.map */
