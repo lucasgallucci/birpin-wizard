@@ -127,14 +127,16 @@ section {
   #data-education .empty-education .imagen {
     margin-right: 15px; }
   #data-education .empty-education h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 10px; }
 
 #data-experiencia .empty-experiencia {
   display: flex; }
   #data-experiencia .empty-experiencia .imagen {
     margin-right: 15px; }
   #data-experiencia .empty-experiencia h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 10px; }
 
 #ayuda-wrapper {
   position: fixed;
