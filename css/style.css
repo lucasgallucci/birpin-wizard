@@ -1,5 +1,5 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:300,400,500,700");
 .gradient-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
   background: #ff9900;
@@ -88,7 +88,8 @@
     .form-element .control label {
       font-weight: 300;
       font-size: 15px;
-      display: block; }
+      display: block;
+      color: #777; }
     .form-element .control input {
       display: block;
       border: none;
@@ -137,19 +138,43 @@ section {
       margin: 15px 0;
       width: 0; } }
 
+.well {
+  background: white;
+  border-radius: 3px;
+  padding: 0; }
+  .well .well-wrapper {
+    padding: 10px; }
+  .well .well-title {
+    background: #007DA7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .well .well-title h3 {
+      margin: 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300; }
+    .well .well-title span {
+      border: 1px solid white;
+      color: white;
+      padding: 5px; }
+  .well .errores {
+    display: block;
+    font-weight: 300;
+    text-align: center;
+    color: #D0021B;
+    padding: 5px; }
+  .well .btn-primary {
+    border-radius: 0;
+    border: none;
+    padding: 10px 0; }
+
 #ayuda-wrapper {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+14,0.65+100 */
-  background: -moz-linear-gradient(top, transparent 0%, transparent 14%, rgba(0, 0, 0, 0.65) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, transparent 0%, transparent 14%, rgba(0, 0, 0, 0.65) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, transparent 0%, transparent 14%, rgba(0, 0, 0, 0.65) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
-  /* IE6-9 */ }
+  width: 100%; }
   #ayuda-wrapper .ayuda {
     max-width: 400px;
     margin: auto;
@@ -172,5 +197,15 @@ section {
         top: 50%;
         transform: translateX(-50%) rotate(45deg);
         left: 0px; }
+    #ayuda-wrapper .ayuda.ok p {
+      background: #7ED321;
+      color: white; }
+      #ayuda-wrapper .ayuda.ok p:before {
+        background: #7ED321; }
+    #ayuda-wrapper .ayuda.error p {
+      background: #D0021B;
+      color: white; }
+      #ayuda-wrapper .ayuda.error p:before {
+        background: #D0021B; }
 
 /*# sourceMappingURL=style.css.map */
