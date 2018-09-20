@@ -137,6 +137,10 @@ section {
   #data-experiencia .empty-experiencia h2 {
     margin-top: 0;
     margin-bottom: 10px; }
+  @media (max-width: 600px) {
+    #data-experiencia .empty-experiencia .btn-link {
+      display: block;
+      margin: 10px 0; } }
 
 #ayuda-wrapper {
   position: fixed;

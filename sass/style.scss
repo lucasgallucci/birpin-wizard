@@ -195,6 +195,13 @@ section{
 			margin-top: 0;
 			margin-bottom: 10px;
 		}
+
+		.btn-link{
+			@media (max-width: 600px){
+				display: block;
+				margin: 10px 0;
+			}
+		}
 	}
 }
 
