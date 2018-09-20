@@ -87,7 +87,7 @@
     flex: 1; }
     .form-element .control label {
       font-weight: 300;
-      font-size: 15px;
+      font-size: 13px;
       display: block;
       color: #777; }
     .form-element .control input {
@@ -211,5 +211,14 @@ section {
       color: white; }
       #ayuda-wrapper .ayuda.error p:before {
         background: #D0021B; }
+
+div.shared-space {
+  display: flex; }
+  div.shared-space > div {
+    flex: 1; }
+    div.shared-space > div:first-child {
+      margin-right: 10px; }
+    div.shared-space > div:last-child {
+      margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
