@@ -54,6 +54,8 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 30px; }
+    #wizard h2.error {
+      color: #D0021B; }
   #wizard .btn-link {
     text-decoration: underline; }
   #wizard section {
@@ -117,6 +119,8 @@
     color: #D0021B; }
   .form-element.error .control input {
     border-bottom-color: #D0021B; }
+  .form-element.error .control p {
+    color: #D0021B; }
 
 #data-basica {
   text-align: center;

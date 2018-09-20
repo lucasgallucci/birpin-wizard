@@ -78,6 +78,9 @@ body{
 		font-size: 20px;
 		text-transform: uppercase;
 		margin-bottom: 30px;
+		&.error{
+			color: $rojo;
+		}
 	}
 
 	.btn-link{
@@ -171,6 +174,9 @@ body{
 			}
 			input{
 				border-bottom-color: $rojo;
+			}
+			p{
+				color: $rojo;
 			}
 		}
 	}
