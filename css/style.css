@@ -140,7 +140,8 @@ section {
   @media (max-width: 600px) {
     #data-experiencia .empty-experiencia .btn-link {
       display: block;
-      margin: 10px 0; } }
+      padding: 0;
+      margin: 15px 0; } }
 
 #ayuda-wrapper {
   position: fixed;
