@@ -169,7 +169,8 @@
 
 #data-education .data-container, #data-experiencia .data-container {
   border-bottom: 10px solid rgba(212, 219, 236, 0.4);
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
 
 .well {
   background: white;
