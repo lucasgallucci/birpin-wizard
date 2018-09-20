@@ -138,6 +138,10 @@ section {
       margin: 15px 0;
       width: 0; } }
 
+#data-education .data-container, #data-experiencia .data-container {
+  border-bottom: 10px solid rgba(212, 219, 236, 0.4);
+  margin-bottom: 20px; }
+
 .well {
   background: white;
   border-radius: 3px;
