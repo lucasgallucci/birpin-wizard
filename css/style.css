@@ -11,15 +11,37 @@
     flex-direction: column;
     justify-content: space-between; }
     #landing main header, html main header {
+      position: fixed;
+      width: 100%;
+      top: 0;
       text-align: center;
-      padding: 5px 0; }
+      padding: 15px 0 5px;
+      background: white;
+      z-index: 999;
+      left: 0; }
+      #landing main header .transparencia, html main header .transparencia {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+        background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+        /* IE6-9 */
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        height: 50px;
+        z-index: 999; }
       #landing main header img, html main header img {
         max-width: 100px; }
       #landing main header h1, html main header h1 {
         font-size: 16px;
         margin: 5px 0; }
     #landing main #areas-ofertas, html main #areas-ofertas {
-      position: relative; }
+      position: relative;
+      padding-top: 100px; }
       #landing main #areas-ofertas h3, html main #areas-ofertas h3 {
         font-weight: 500;
         font-size: 17px;
