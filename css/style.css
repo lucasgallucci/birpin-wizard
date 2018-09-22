@@ -18,62 +18,81 @@
       #landing main header h1, html main header h1 {
         font-size: 16px;
         margin: 5px 0; }
+    #landing main #areas-ofertas h3, html main #areas-ofertas h3 {
+      font-weight: 500;
+      font-size: 17px; }
     #landing main #areas-ofertas ul, html main #areas-ofertas ul {
       list-style: none;
       padding: 0; }
-      #landing main #areas-ofertas ul li h2, html main #areas-ofertas ul li h2 {
+      #landing main #areas-ofertas ul li, html main #areas-ofertas ul li {
+        margin: 10px 0; }
+        #landing main #areas-ofertas ul li h2, html main #areas-ofertas ul li h2 {
+          font-size: 14px;
+          margin: 5px 0;
+          font-weight: 400; }
+          #landing main #areas-ofertas ul li h2 strong, html main #areas-ofertas ul li h2 strong {
+            display: none; }
+          #landing main #areas-ofertas ul li h2 span, html main #areas-ofertas ul li h2 span {
+            border: 1px solid blue;
+            padding: 2px 3px 0;
+            margin-left: 5px;
+            display: inline-block;
+            border-radius: 2px;
+            font-weight: 300;
+            font-size: 12px; }
+    #landing main #create-account, html main #create-account {
+      text-align: center; }
+      #landing main #create-account h2, html main #create-account h2 {
         font-size: 14px;
-        margin: 5px 0;
-        font-weight: 400; }
-        #landing main #areas-ofertas ul li h2 strong, html main #areas-ofertas ul li h2 strong {
-          display: none; }
-        #landing main #areas-ofertas ul li h2 span, html main #areas-ofertas ul li h2 span {
-          border: 1px solid blue;
-          padding: 2px 3px 0;
-          margin-left: 5px;
-          display: inline-block;
-          border-radius: 2px;
-          font-weight: 300;
-          font-size: 12px; }
-    #landing main #create-account h2, html main #create-account h2 {
-      font-size: 14px;
-      text-transform: uppercase; }
-    #landing main #create-account p, html main #create-account p {
-      margin: 0; }
-    #landing main #create-account .create-account, html main #create-account .create-account {
-      list-style: none;
-      padding: 0;
-      max-width: 500px;
-      display: flex;
-      flex-wrap: wrap; }
-      #landing main #create-account .create-account li, html main #create-account .create-account li {
-        max-width: 290px;
-        min-width: 290px;
-        flex: 1;
-        padding: 5px 0;
-        align-items: stretch; }
-        #landing main #create-account .create-account li article, html main #create-account .create-account li article {
-          padding: 5px 10px;
-          border: 1px solid white;
-          height: 100%;
-          color: white;
-          background: orange; }
-          #landing main #create-account .create-account li article h3, html main #create-account .create-account li article h3 {
-            font-size: 15px;
-            margin: 0 0 5px 0; }
-          #landing main #create-account .create-account li article p, html main #create-account .create-account li article p {
-            margin: 0;
-            font-size: 11px; }
-    #landing main #create-account .access-menu, html main #create-account .access-menu {
-      display: flex;
-      padding: 0;
-      list-style: none;
-      flex-wrap: nowrap;
-      justify-content: center; }
-      #landing main #create-account .access-menu li span, html main #create-account .access-menu li span {
-        font-size: 12px;
-        text-decoration: underline;
-        padding: 0 5px; }
+        text-transform: uppercase; }
+      #landing main #create-account .elegi, html main #create-account .elegi {
+        margin: 0;
+        display: flex;
+        flex: 1; }
+        #landing main #create-account .elegi:after, #landing main #create-account .elegi:before, html main #create-account .elegi:after, html main #create-account .elegi:before {
+          flex: 1;
+          content: "";
+          display: block;
+          height: 1px;
+          background: #777;
+          position: relative;
+          top: 9px;
+          margin: 0 10px; }
+      #landing main #create-account .create-account, html main #create-account .create-account {
+        list-style: none;
+        padding: 0;
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #landing main #create-account .create-account li, html main #create-account .create-account li {
+          max-width: 290px;
+          min-width: 290px;
+          flex: 1;
+          padding: 5px 0;
+          align-items: stretch; }
+          #landing main #create-account .create-account li article, html main #create-account .create-account li article {
+            padding: 5px 10px;
+            border: 1px solid white;
+            height: 100%;
+            color: white;
+            background: orange; }
+            #landing main #create-account .create-account li article h3, html main #create-account .create-account li article h3 {
+              font-size: 15px;
+              margin: 0 0 5px 0; }
+            #landing main #create-account .create-account li article p, html main #create-account .create-account li article p {
+              margin: 0;
+              font-size: 11px; }
+      #landing main #create-account .access-menu, html main #create-account .access-menu {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        flex-wrap: nowrap;
+        justify-content: center; }
+        #landing main #create-account .access-menu li span, html main #create-account .access-menu li span {
+          font-size: 12px;
+          text-decoration: underline;
+          padding: 0 5px; }
 
 .gradient-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
