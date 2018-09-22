@@ -1,6 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:300,400,500,700');
-
+@import "landing";
 //vars
 $main-color: #FF8103;
 $color2: #007DA7;
@@ -254,6 +254,9 @@ body{
 		border-bottom: 10px solid rgba(212,219,236,0.40);
 		margin-bottom: 20px;
 		padding-bottom: 10px;
+		.form-element{
+			margin-bottom: 10px;
+		}
 	}
 }
 
@@ -356,13 +359,29 @@ body{
 
 div.shared-space{
 	display: flex;
+	width: 100%;
 	&>div{
 		flex: 1;
+
 		&:first-child{
 			margin-right: 10px;
 		}
 		&:last-child{
 			margin-left: 10px;
 		}
+	}
+}
+
+
+.error-txt{
+	color: red;
+}
+
+.data{
+	.bubble{
+		border: 1px solid #888;
+		border-radius: 50px;
+		margin-right: 10px;
+		padding: 10px;
 	}
 }

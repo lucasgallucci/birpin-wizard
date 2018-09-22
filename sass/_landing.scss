@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+
+#landing, html{
+	height: 100%;
+    font-family: Rubik;
+    main{
+        height: 100%;
+        padding: 15px;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        header{
+            text-align: center;
+            padding: 5px 0;
+            img{
+                max-width: 100px;
+            }
+            
+            h1{
+                font-size: 16px;
+                margin: 5px 0;
+            }
+
+            
+        }
+        
+        #areas-ofertas{
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    h2{
+                        font-size: 14px;
+                        margin: 5px 0;
+                        font-weight: 400;
+                        strong{
+                            display: none;
+                        }
+                        span{
+                            border: 1px solid blue; 
+                            padding: 2px 3px 0;
+                            margin-left: 5px;
+                            display: inline-block;
+                            border-radius: 2px;
+                            font-weight: 300;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        #create-account{
+            h2{
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+
+            p{
+                margin: 0;
+            }
+            
+            .create-account{
+                list-style: none;
+                padding: 0;
+                max-width: 500px;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    max-width: 290px;
+                    min-width: 290px;
+                    flex: 1;
+                    padding: 5px 0;
+                    align-items: stretch;
+                    article{
+                        padding: 5px 10px;
+                        border: 1px solid white;
+                        height: 100%;
+                        color: white;
+                        background: orange;
+                        h3{
+                            font-size: 15px;
+                            margin: 0 0 5px 0;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            .access-menu{
+                display: flex;
+                padding: 0;
+                list-style: none;
+                flex-wrap: nowrap;
+                justify-content: center;
+                li{
+                    span{
+                        font-size: 12px;
+                        text-decoration: underline;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
