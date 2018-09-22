@@ -27,7 +27,7 @@
       #landing main #areas-ofertas ul li, html main #areas-ofertas ul li {
         margin: 10px 0; }
         #landing main #areas-ofertas ul li h2, html main #areas-ofertas ul li h2 {
-          font-size: 14px;
+          font-size: 15px;
           margin: 5px 0;
           font-weight: 400; }
           #landing main #areas-ofertas ul li h2 strong, html main #areas-ofertas ul li h2 strong {
@@ -90,7 +90,7 @@
         flex-wrap: nowrap;
         justify-content: center; }
         #landing main #create-account .access-menu li span, html main #create-account .access-menu li span {
-          font-size: 12px;
+          font-size: 13px;
           text-decoration: underline;
           padding: 0 5px; }
 
