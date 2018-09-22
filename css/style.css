@@ -24,6 +24,9 @@
         font-weight: 500;
         font-size: 17px;
         margin-bottom: 20px; }
+      #landing main #areas-ofertas .wrapper, html main #areas-ofertas .wrapper {
+        height: 100%;
+        overflow-y: scroll; }
       #landing main #areas-ofertas ul, html main #areas-ofertas ul {
         list-style: none;
         padding: 0; }
@@ -43,23 +46,13 @@
               border-radius: 2px;
               font-weight: 300;
               font-size: 12px; }
-      #landing main #areas-ofertas .transparencia, html main #areas-ofertas .transparencia {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        height: 100px;
-        z-index: 999;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-        /* IE6-9 */ }
     #landing main #create-account, html main #create-account {
-      text-align: center; }
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      background: white;
+      left: 0; }
       #landing main #create-account h2, html main #create-account h2 {
         font-size: 14px;
         text-transform: uppercase; }
@@ -111,6 +104,23 @@
           font-size: 13px;
           text-decoration: underline;
           padding: 0 5px; }
+    #landing main .transparencia, html main .transparencia {
+      position: absolute;
+      width: 100%;
+      top: -150px;
+      height: 150px;
+      z-index: 999;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+      /* IE6-9 */ }
+  #landing .info-container, html .info-container {
+    padding-bottom: 200px; }
 
 .gradient-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
