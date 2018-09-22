@@ -4,13 +4,13 @@
 #landing, html {
   height: 100%;
   font-family: Rubik; }
-  #landing main, html main {
+  #landing .landing, html .landing {
     height: 100%;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    #landing main header, html main header {
+    #landing .landing header, html .landing header {
       position: fixed;
       width: 100%;
       top: 0;
@@ -19,7 +19,7 @@
       background: white;
       z-index: 999;
       left: 0; }
-      #landing main header .transparencia, html main header .transparencia {
+      #landing .landing header .transparencia, html .landing header .transparencia {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
         background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
         /* FF3.6-15 */
@@ -34,33 +34,33 @@
         top: 100px;
         height: 50px;
         z-index: 999; }
-      #landing main header img, html main header img {
+      #landing .landing header img, html .landing header img {
         max-width: 100px; }
-      #landing main header h1, html main header h1 {
+      #landing .landing header h1, html .landing header h1 {
         font-size: 16px;
         margin: 5px 0; }
-    #landing main #areas-ofertas, html main #areas-ofertas {
+    #landing .landing #areas-ofertas, html .landing #areas-ofertas {
       position: relative;
       padding-top: 100px; }
-      #landing main #areas-ofertas h3, html main #areas-ofertas h3 {
+      #landing .landing #areas-ofertas h3, html .landing #areas-ofertas h3 {
         font-weight: 500;
         font-size: 17px;
         margin-bottom: 20px; }
-      #landing main #areas-ofertas .wrapper, html main #areas-ofertas .wrapper {
+      #landing .landing #areas-ofertas .wrapper, html .landing #areas-ofertas .wrapper {
         height: 100%;
         overflow-y: scroll; }
-      #landing main #areas-ofertas ul, html main #areas-ofertas ul {
+      #landing .landing #areas-ofertas ul, html .landing #areas-ofertas ul {
         list-style: none;
         padding: 0; }
-        #landing main #areas-ofertas ul li, html main #areas-ofertas ul li {
+        #landing .landing #areas-ofertas ul li, html .landing #areas-ofertas ul li {
           margin: 10px 0; }
-          #landing main #areas-ofertas ul li h2, html main #areas-ofertas ul li h2 {
+          #landing .landing #areas-ofertas ul li h2, html .landing #areas-ofertas ul li h2 {
             font-size: 15px;
             margin: 5px 0;
             font-weight: 400; }
-            #landing main #areas-ofertas ul li h2 strong, html main #areas-ofertas ul li h2 strong {
+            #landing .landing #areas-ofertas ul li h2 strong, html .landing #areas-ofertas ul li h2 strong {
               display: none; }
-            #landing main #areas-ofertas ul li h2 span, html main #areas-ofertas ul li h2 span {
+            #landing .landing #areas-ofertas ul li h2 span, html .landing #areas-ofertas ul li h2 span {
               border: 1px solid blue;
               padding: 2px 3px;
               margin-left: 5px;
@@ -68,21 +68,21 @@
               border-radius: 2px;
               font-weight: 300;
               font-size: 12px; }
-    #landing main #create-account, html main #create-account {
+    #landing .landing #create-account, html .landing #create-account {
       text-align: center;
       position: fixed;
       width: 100%;
       bottom: 0;
       background: white;
       left: 0; }
-      #landing main #create-account h2, html main #create-account h2 {
+      #landing .landing #create-account h2, html .landing #create-account h2 {
         font-size: 14px;
         text-transform: uppercase; }
-      #landing main #create-account .elegi, html main #create-account .elegi {
+      #landing .landing #create-account .elegi, html .landing #create-account .elegi {
         margin: 0;
         display: flex;
         flex: 1; }
-        #landing main #create-account .elegi:after, #landing main #create-account .elegi:before, html main #create-account .elegi:after, html main #create-account .elegi:before {
+        #landing .landing #create-account .elegi:after, #landing .landing #create-account .elegi:before, html .landing #create-account .elegi:after, html .landing #create-account .elegi:before {
           flex: 1;
           content: "";
           display: block;
@@ -91,42 +91,42 @@
           position: relative;
           top: 9px;
           margin: 0 10px; }
-      #landing main #create-account .create-account, html main #create-account .create-account {
+      #landing .landing #create-account .create-account, html .landing #create-account .create-account {
         list-style: none;
         padding: 0;
         max-width: 500px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; }
-        #landing main #create-account .create-account li, html main #create-account .create-account li {
+        #landing .landing #create-account .create-account li, html .landing #create-account .create-account li {
           max-width: 290px;
           min-width: 290px;
           flex: 1;
           padding: 5px 0;
           align-items: stretch; }
-          #landing main #create-account .create-account li article, html main #create-account .create-account li article {
+          #landing .landing #create-account .create-account li article, html .landing #create-account .create-account li article {
             padding: 5px 10px;
             border: 1px solid white;
             height: 100%;
             color: white;
             background: orange; }
-            #landing main #create-account .create-account li article h3, html main #create-account .create-account li article h3 {
+            #landing .landing #create-account .create-account li article h3, html .landing #create-account .create-account li article h3 {
               font-size: 15px;
               margin: 0 0 5px 0; }
-            #landing main #create-account .create-account li article p, html main #create-account .create-account li article p {
+            #landing .landing #create-account .create-account li article p, html .landing #create-account .create-account li article p {
               margin: 0;
               font-size: 11px; }
-      #landing main #create-account .access-menu, html main #create-account .access-menu {
+      #landing .landing #create-account .access-menu, html .landing #create-account .access-menu {
         display: flex;
         padding: 0;
         list-style: none;
         flex-wrap: nowrap;
         justify-content: center; }
-        #landing main #create-account .access-menu li span, html main #create-account .access-menu li span {
+        #landing .landing #create-account .access-menu li span, html .landing #create-account .access-menu li span {
           font-size: 13px;
           text-decoration: underline;
           padding: 0 5px; }
-    #landing main .transparencia, html main .transparencia {
+    #landing .landing .transparencia, html .landing .transparencia {
       position: absolute;
       width: 100%;
       top: -150px;
