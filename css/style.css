@@ -18,28 +18,46 @@
       #landing main header h1, html main header h1 {
         font-size: 16px;
         margin: 5px 0; }
-    #landing main #areas-ofertas h3, html main #areas-ofertas h3 {
-      font-weight: 500;
-      font-size: 17px; }
-    #landing main #areas-ofertas ul, html main #areas-ofertas ul {
-      list-style: none;
-      padding: 0; }
-      #landing main #areas-ofertas ul li, html main #areas-ofertas ul li {
-        margin: 10px 0; }
-        #landing main #areas-ofertas ul li h2, html main #areas-ofertas ul li h2 {
-          font-size: 15px;
-          margin: 5px 0;
-          font-weight: 400; }
-          #landing main #areas-ofertas ul li h2 strong, html main #areas-ofertas ul li h2 strong {
-            display: none; }
-          #landing main #areas-ofertas ul li h2 span, html main #areas-ofertas ul li h2 span {
-            border: 1px solid blue;
-            padding: 2px 3px 0;
-            margin-left: 5px;
-            display: inline-block;
-            border-radius: 2px;
-            font-weight: 300;
-            font-size: 12px; }
+    #landing main #areas-ofertas, html main #areas-ofertas {
+      position: relative; }
+      #landing main #areas-ofertas h3, html main #areas-ofertas h3 {
+        font-weight: 500;
+        font-size: 17px;
+        margin-bottom: 20px; }
+      #landing main #areas-ofertas ul, html main #areas-ofertas ul {
+        list-style: none;
+        padding: 0; }
+        #landing main #areas-ofertas ul li, html main #areas-ofertas ul li {
+          margin: 10px 0; }
+          #landing main #areas-ofertas ul li h2, html main #areas-ofertas ul li h2 {
+            font-size: 15px;
+            margin: 5px 0;
+            font-weight: 400; }
+            #landing main #areas-ofertas ul li h2 strong, html main #areas-ofertas ul li h2 strong {
+              display: none; }
+            #landing main #areas-ofertas ul li h2 span, html main #areas-ofertas ul li h2 span {
+              border: 1px solid blue;
+              padding: 2px 3px;
+              margin-left: 5px;
+              display: inline-block;
+              border-radius: 2px;
+              font-weight: 300;
+              font-size: 12px; }
+      #landing main #areas-ofertas .transparencia, html main #areas-ofertas .transparencia {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 100px;
+        z-index: 999;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+        /* IE6-9 */ }
     #landing main #create-account, html main #create-account {
       text-align: center; }
       #landing main #create-account h2, html main #create-account h2 {
