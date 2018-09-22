@@ -235,7 +235,12 @@
   align-items: center; }
   .form-element .status {
     margin-right: 10px;
-    width: 25px; }
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .form-element .control {
     flex: 1; }
     .form-element .control label {
@@ -259,13 +264,45 @@
     color: #7ED321; }
   .form-element.ok .control input {
     border-bottom-color: #7ED321; }
+  .form-element.ok .status {
+    background: #7ED321; }
   .form-element.error .control label {
     color: #D0021B; }
   .form-element.error .control input {
     border-bottom-color: #D0021B; }
   .form-element.error .control p {
     color: #D0021B; }
+  .form-element.error .status {
+    background: url("") #D0021B; }
+  .form-element.waiting .status {
+    background: #e0e0e0; }
+    .form-element.waiting .status .point {
+      width: 3px;
+      height: 3px;
+      margin-right: 2px;
+      background: #9D9D9D;
+      border-radius: 50%; }
+      .form-element.waiting .status .point:last-child {
+        margin-right: 0; }
+  .form-element.waiting.active .status {
+    background: #01A8E9; }
+    .form-element.waiting.active .status .point {
+      background: white;
+      animation-name: waiting;
+      animation-duration: 1200ms;
+      animation-iteration-count: infinite; }
+      .form-element.waiting.active .status .point:nth-child(2) {
+        animation-delay: 400ms; }
+      .form-element.waiting.active .status .point:last-child {
+        animation-delay: 800ms; }
 
+@keyframes waiting {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 #data-basica {
   text-align: center;
   border-top: 30px solid rgba(212, 219, 236, 0.4); }

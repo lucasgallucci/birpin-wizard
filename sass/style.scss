@@ -126,9 +126,16 @@ body{
 	display: flex;
 	margin: 10px 0 30px 0;
 	align-items: center;
+	
 	.status{
 		margin-right: 10px;
-		width: 25px;
+		border-radius: 50%;
+		height: 20px;
+		width: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
 	}
 
 	.control{
@@ -154,6 +161,8 @@ body{
 				border-color: $color3;
 			}
 		}
+
+
 	}
 
 	&.ok{
@@ -164,6 +173,10 @@ body{
 			input{
 				border-bottom-color: $verde;
 			}
+		}
+
+		.status{
+			background: $verde;
 		}
 	}
 
@@ -179,11 +192,64 @@ body{
 				color: $rojo;
 			}
 		}
+
+		.status{
+			background: url("") $rojo;
+		}
+	}
+
+
+	&.waiting{
+		.status{
+			background: $color7;
+			.point{
+				width: 3px;
+				height: 3px;
+				margin-right: 2px;
+				background: $color6;
+				border-radius: 50%;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+
+		&.active{
+			.status{
+				background: $color3;
+			
+				.point{
+					background: white;
+					animation-name: waiting;
+					animation-duration: 1200ms;
+					animation-iteration-count: infinite;
+					&:nth-child(2){
+						animation-delay:400ms;
+					}
+					&:last-child{
+						animation-delay:800ms;
+					}
+				}
+			}
+		}
 	}
 }
 
+ @keyframes waiting{
+ 	0%{
+ 		transform:scale(1);
+ 	}
+ 	
+ 
+ 	50%{
+ 		transform: scale(0);
+ 	}
 
 
+ 	100%{
+ 		transform:scale(1);
+ 	}
+ }
 
 #data-basica{
 	text-align: center;
