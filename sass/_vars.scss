@@ -1,0 +1,52 @@
+
+$main-color: #FF8103;
+$color2: #007DA7;
+$color3: #01A8E9;
+$color4: #094074;
+$color5: #EC0821;
+$color6: #9D9D9D;
+$color7: #e0e0e0;
+$color8: #f2f2f2;
+$amarillo: #FFD15C;
+$verde: #7ED321;
+$rojo: #D0021B;
+
+.gradient-orange{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
+	background: rgb(255,153,0); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(255,153,0,1) 0%, rgba(236,78,33,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(255,153,0,1) 0%,rgba(236,78,33,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(255,153,0,1) 0%,rgba(236,78,33,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ec4e21',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.gradient-blue{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c6997+0,094074+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007da7+0,094074+100 */
+	background: rgb(0,125,167); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(0,125,167,1) 0%, rgba(9,64,116,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(0,125,167,1) 0%,rgba(9,64,116,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(0,125,167,1) 0%,rgba(9,64,116,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007da7', endColorstr='#094074',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+.gradient-gray{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#555555+0,222222+100 */
+	background: rgb(85,85,85); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(85,85,85,1) 0%, rgba(34,34,34,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(85,85,85,1) 0%,rgba(34,34,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(85,85,85,1) 0%,rgba(34,34,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#222222',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+$gray: #9D9D9D;
+
+
+$text-color: #3b4858;
+$title-font: "Rubik";
+$text-font: "Roboto";
+
+$facebook: #3b5998;
+$linkedin: #007bb5;
+$google: #dd4b39;

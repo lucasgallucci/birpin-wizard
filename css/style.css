@@ -1,6 +1,47 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+.gradient-orange, #landing-mobile #buscador {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
+  background: #ff9900;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ff9900 0%, #ec4e21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ff9900 0%, #ec4e21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ff9900 0%, #ec4e21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ec4e21',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.gradient-blue, #landing2 .landing-header, #wizard-intro {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c6997+0,094074+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007da7+0,094074+100 */
+  background: #007da7;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #007da7 0%, #094074 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #007da7 0%, #094074 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #007da7 0%, #094074 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007da7', endColorstr='#094074',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.gradient-gray, #landing-mobile .como-funciona {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#555555+0,222222+100 */
+  background: #555555;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #555555 0%, #222222 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #555555 0%, #222222 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #555555 0%, #222222 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#222222',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
 #landing, html {
   height: 100%;
   font-family: Rubik; }
@@ -144,45 +185,466 @@
   #landing .info-container, html .info-container {
     padding-bottom: 200px; }
 
-.gradient-orange {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
-  background: #ff9900;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #ff9900 0%, #ec4e21 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #ff9900 0%, #ec4e21 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #ff9900 0%, #ec4e21 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ec4e21',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+#landing2 {
+  font-family: "Roboto"; }
+  #landing2 h1, #landing2 h2, #landing2 h3, #landing2 h4, #landing2 h5, #landing2 h6 {
+    font-family: "Rubik"; }
+  #landing2 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: #FF8103;
+    z-index: 999; }
+    #landing2 nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+      justify-content: flex-end; }
+      #landing2 nav ul li {
+        color: white;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: underline; }
+  #landing2 .landing-header {
+    padding: 100px 0; }
+    #landing2 .landing-header .logo {
+      max-width: 150px; }
+    #landing2 .landing-header h1, #landing2 .landing-header h2 {
+      color: white; }
+    #landing2 .landing-header .divider {
+      width: 100px;
+      height: 4px;
+      background: white; }
+    #landing2 .landing-header h1 {
+      text-transform: uppercase;
+      font-size: 40px; }
+      #landing2 .landing-header h1 strong {
+        font-weight: 700; }
+  #landing2 .create-account-box {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px; }
+    #landing2 .create-account-box h5 {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+      font-size: 25px;
+      text-align: center; }
+      #landing2 .create-account-box h5 span {
+        font-size: 20px;
+        font-weight: 400;
+        display: block; }
+    #landing2 .create-account-box .social-login {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      justify-content: center; }
+      #landing2 .create-account-box .social-login li {
+        color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 10px; }
+        #landing2 .create-account-box .social-login li ion-icon {
+          font-size: 20px; }
+        #landing2 .create-account-box .social-login li.facebook {
+          background: #3b5998; }
+        #landing2 .create-account-box .social-login li.google {
+          background: #dd4b39; }
+        #landing2 .create-account-box .social-login li.linkedin {
+          background: #007bb5; }
+    #landing2 .create-account-box .email-login .title {
+      display: block;
+      color: #777;
+      text-align: left;
+      margin-bottom: 10px; }
+      #landing2 .create-account-box .email-login .title ion-icon {
+        font-size: 15px;
+        margin-right: 5px; }
+      #landing2 .create-account-box .email-login .title span {
+        position: relative;
+        top: -2px; }
+    #landing2 .create-account-box .email-login input {
+      font-weight: 300; }
+  #landing2 .contenedor {
+    margin: 0 30px;
+    padding-right: 400px; }
+  #landing2 section {
+    padding: 50px 0; }
+  #landing2 .datos h2 {
+    font-size: 20px; }
+  #landing2 .datos .empresas {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center; }
+    #landing2 .datos .empresas li {
+      flex: 1;
+      max-width: 140px;
+      padding: 0 5px;
+      max-height: 60px; }
+  #landing2 .como-funciona {
+    background: #444; }
+    #landing2 .como-funciona h2 {
+      color: white;
+      margin-bottom: 30px;
+      text-transform: uppercase; }
+  #landing2 #ofertas-por-area .categorias {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    #landing2 #ofertas-por-area .categorias li {
+      flex: 1;
+      min-width: 400px; }
+    #landing2 #ofertas-por-area .categorias h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #333; }
+      #landing2 #ofertas-por-area .categorias h2 small {
+        font-size: 14px;
+        color: white;
+        background: #FF8103;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 3px; }
+  #landing2 .video {
+    max-width: 500px; }
 
-.gradient-blue, #wizard-intro {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c6997+0,094074+100 */
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007da7+0,094074+100 */
-  background: #007da7;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #007da7 0%, #094074 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #007da7 0%, #094074 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #007da7 0%, #094074 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007da7', endColorstr='#094074',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-
-.gradient-gray {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#555555+0,222222+100 */
-  background: #555555;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #555555 0%, #222222 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #555555 0%, #222222 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #555555 0%, #222222 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#222222',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+#landing-mobile {
+  font-family: "Roboto";
+  padding-bottom: 160px; }
+  #landing-mobile h1, #landing-mobile h2, #landing-mobile h3, #landing-mobile h4, #landing-mobile h5, #landing-mobile h6 {
+    font-family: "Rubik"; }
+  #landing-mobile .create-account-box {
+    position: fixed;
+    bottom: -510px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    transition: 1s;
+    z-index: 9999; }
+    #landing-mobile .create-account-box.mostrar {
+      bottom: -320px; }
+    #landing-mobile .create-account-box.abrir {
+      bottom: 0px; }
+    #landing-mobile .create-account-box h5 {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      text-align: center; }
+      #landing-mobile .create-account-box h5 span {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 5px; }
+    #landing-mobile .create-account-box .cerrar {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+    #landing-mobile .create-account-box .social-login {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      justify-content: center; }
+      #landing-mobile .create-account-box .social-login li {
+        color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 10px; }
+        #landing-mobile .create-account-box .social-login li ion-icon {
+          font-size: 20px; }
+        #landing-mobile .create-account-box .social-login li.facebook {
+          background: #3b5998; }
+        #landing-mobile .create-account-box .social-login li.google {
+          background: #dd4b39; }
+        #landing-mobile .create-account-box .social-login li.linkedin {
+          background: #007bb5; }
+    #landing-mobile .create-account-box .email {
+      padding: 5px 10px;
+      border: 1px solid #777;
+      border-radius: 50px;
+      display: inline-block; }
+    #landing-mobile .create-account-box .email-login .title {
+      display: block;
+      color: #777;
+      text-align: left;
+      margin-bottom: 10px; }
+      #landing-mobile .create-account-box .email-login .title ion-icon {
+        font-size: 15px;
+        margin-right: 5px; }
+      #landing-mobile .create-account-box .email-login .title span {
+        position: relative;
+        top: -2px; }
+    #landing-mobile .create-account-box .email-login input {
+      font-weight: 300; }
+  #landing-mobile nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: #FF8103;
+    z-index: 999; }
+    #landing-mobile nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+      justify-content: flex-end; }
+      #landing-mobile nav ul li {
+        color: white;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: underline; }
+  #landing-mobile .create-account {
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px; }
+    #landing-mobile .create-account h5 {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      text-align: center;
+      color: white; }
+      #landing-mobile .create-account h5 span {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 5px; }
+    #landing-mobile .create-account .social-login {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      justify-content: center; }
+      #landing-mobile .create-account .social-login li {
+        color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 10px; }
+        #landing-mobile .create-account .social-login li ion-icon {
+          font-size: 20px; }
+        #landing-mobile .create-account .social-login li.facebook {
+          background: #3b5998; }
+        #landing-mobile .create-account .social-login li.google {
+          background: #dd4b39; }
+        #landing-mobile .create-account .social-login li.linkedin {
+          background: #007bb5; }
+    #landing-mobile .create-account .email {
+      padding: 5px 10px;
+      border: 1px solid white;
+      border-radius: 50px;
+      display: inline-block;
+      color: white; }
+    #landing-mobile .create-account .email-login .title {
+      display: block;
+      color: #777;
+      text-align: left;
+      margin-bottom: 10px; }
+      #landing-mobile .create-account .email-login .title ion-icon {
+        font-size: 15px;
+        margin-right: 5px; }
+      #landing-mobile .create-account .email-login .title span {
+        position: relative;
+        top: -2px; }
+    #landing-mobile .create-account .email-login input {
+      font-weight: 300; }
+  #landing-mobile nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: #FF8103;
+    z-index: 999; }
+    #landing-mobile nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+      justify-content: flex-end; }
+      #landing-mobile nav ul li {
+        color: white;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: underline; }
+  #landing-mobile .contenedor {
+    padding: 20px; }
+  #landing-mobile .landing-header {
+    padding: 10px 0;
+    position: relative; }
+    #landing-mobile .landing-header .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      #landing-mobile .landing-header .back div {
+        width: 100%;
+        height: 100%;
+        animation-name: slide;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        top: 0;
+        background-size: cover;
+        top: 0;
+        left: 0; }
+        #landing-mobile .landing-header .back div.b1 {
+          background-image: url("../img/b1.jpg");
+          background-position: left; }
+        #landing-mobile .landing-header .back div.b2 {
+          background-image: url("../img/b2.jpg");
+          background-position: left;
+          animation-delay: 1600ms; }
+        #landing-mobile .landing-header .back div.b3 {
+          background-image: url("../img/b3.jpg");
+          background-position: left;
+          animation-delay: 3200ms; }
+        #landing-mobile .landing-header .back div.b4 {
+          background-image: url("../img/b4.jpg");
+          background-position: center;
+          animation-delay: 4800ms; }
+        #landing-mobile .landing-header .back div.b5 {
+          background-image: url("../img/b5.jpg");
+          animation-delay: 6000ms; }
+        #landing-mobile .landing-header .back div.b6 {
+          background-image: url("../img/b6.jpg");
+          background-position: right;
+          animation-delay: 7200ms; }
+@keyframes slide {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+    #landing-mobile .landing-header .logo {
+      text-align: center;
+      position: relative;
+      z-index: 999; }
+      #landing-mobile .landing-header .logo img {
+        max-width: 120px; }
+    #landing-mobile .landing-header h1, #landing-mobile .landing-header h2 {
+      color: white;
+      z-index: 999; }
+    #landing-mobile .landing-header .divider {
+      width: 100px;
+      height: 4px;
+      background: white; }
+    #landing-mobile .landing-header h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      position: relative; }
+      #landing-mobile .landing-header h1 strong {
+        font-weight: 700;
+        font-size: 26px; }
+  #landing-mobile #buscador {
+    text-align: center; }
+    #landing-mobile #buscador h2 {
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    #landing-mobile #buscador h5, #landing-mobile #buscador h6 {
+      display: block;
+      font-size: 16px;
+      font-family: "Roboto";
+      color: white;
+      font-weight: 400; }
+    #landing-mobile #buscador h6 {
+      font-size: 14px; }
+    #landing-mobile #buscador .buscador {
+      display: flex;
+      margin-bottom: 15px; }
+      #landing-mobile #buscador .buscador input {
+        border: none;
+        border-radius: 0;
+        background: white;
+        box-shadow: none; }
+        #landing-mobile #buscador .buscador input[type="submit"] {
+          background: #007DA7;
+          color: white; }
+  #landing-mobile .datos h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  #landing-mobile .datos .empresas {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    #landing-mobile .datos .empresas li {
+      flex: 1;
+      max-width: 140px;
+      padding: 0 5px;
+      max-height: 60px;
+      min-width: 90px;
+      margin-bottom: 20px; }
+  #landing-mobile .como-funciona {
+    text-align: center; }
+    #landing-mobile .como-funciona h2 {
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+  #landing-mobile #ofertas-por-area .categorias {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    #landing-mobile #ofertas-por-area .categorias li {
+      flex: 1;
+      min-width: 400px; }
+    #landing-mobile #ofertas-por-area .categorias h2 {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 5px;
+      color: #333; }
+      #landing-mobile #ofertas-por-area .categorias h2 small {
+        font-size: 11px;
+        color: white;
+        background: #FF8103;
+        display: inline-block;
+        padding: 3px 5px;
+        border-radius: 3px;
+        margin-left: 5px; }
+  #landing-mobile #ofertas-por-area .see-all h2 {
+    color: #01A8E9;
+    text-decoration: underline; }
 
 #wizard {
   font-family: "Rubik";
@@ -279,7 +741,7 @@
     .form-element.waiting .status .point {
       width: 3px;
       height: 3px;
-      margin-right: 2px;
+      margin-right: 1px;
       background: #9D9D9D;
       border-radius: 50%; }
       .form-element.waiting .status .point:last-child {
