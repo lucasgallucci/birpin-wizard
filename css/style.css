@@ -1,7 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Rubik:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 .gradient-orange, #landing-mobile #buscador {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,ec4e21+100 */
   background: #ff9900;
@@ -330,14 +329,15 @@
     font-family: "Rubik"; }
   #landing-mobile .create-account-box {
     position: fixed;
-    bottom: -510px;
+    bottom: -520px;
     width: 100%;
     margin: auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     transition: 1s;
-    z-index: 9999; }
+    z-index: 9999;
+    color: white; }
     #landing-mobile .create-account-box.mostrar {
       bottom: -320px; }
     #landing-mobile .create-account-box.abrir {
@@ -352,6 +352,12 @@
         font-size: 16px;
         font-weight: 400;
         margin-top: 5px; }
+    #landing-mobile .create-account-box .login {
+      color: white;
+      margin-top: 10px; }
+      #landing-mobile .create-account-box .login a {
+        color: white;
+        text-decoration: underline; }
     #landing-mobile .create-account-box .cerrar {
       position: absolute;
       top: 10px;
@@ -363,15 +369,15 @@
       justify-content: center; }
       #landing-mobile .create-account-box .social-login li {
         color: white;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
         margin: 0 10px; }
         #landing-mobile .create-account-box .social-login li ion-icon {
-          font-size: 20px; }
+          font-size: 25px; }
         #landing-mobile .create-account-box .social-login li.facebook {
           background: #3b5998; }
         #landing-mobile .create-account-box .social-login li.google {
@@ -385,7 +391,7 @@
       display: inline-block; }
     #landing-mobile .create-account-box .email-login .title {
       display: block;
-      color: #777;
+      color: white;
       text-align: left;
       margin-bottom: 10px; }
       #landing-mobile .create-account-box .email-login .title ion-icon {
@@ -396,6 +402,34 @@
         top: -2px; }
     #landing-mobile .create-account-box .email-login input {
       font-weight: 300; }
+    @media (min-width: 1000px) {
+      #landing-mobile .create-account-box {
+        bottom: auto !important;
+        position: fixed;
+        width: 330px;
+        top: 20px;
+        right: 20px;
+        padding-bottom: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: #333; }
+        #landing-mobile .create-account-box h5 {
+          font-size: 20px; }
+          #landing-mobile .create-account-box h5 span {
+            font-size: 20px;
+            display: block; }
+        #landing-mobile .create-account-box .crear-mail {
+          display: none; }
+        #landing-mobile .create-account-box .email-login .title {
+          color: #333; }
+        #landing-mobile .create-account-box .login {
+          color: #333;
+          margin-top: 10px; }
+          #landing-mobile .create-account-box .login a {
+            color: #333;
+            text-decoration: underline; } }
   #landing-mobile nav {
     position: fixed;
     top: 0;
@@ -435,7 +469,8 @@
       #landing-mobile .create-account h5 span {
         font-size: 16px;
         font-weight: 400;
-        margin-top: 5px; }
+        margin-top: 5px;
+        display: block; }
     #landing-mobile .create-account .social-login {
       list-style: none;
       display: flex;
@@ -443,15 +478,15 @@
       justify-content: center; }
       #landing-mobile .create-account .social-login li {
         color: white;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
         margin: 0 10px; }
         #landing-mobile .create-account .social-login li ion-icon {
-          font-size: 20px; }
+          font-size: 25px; }
         #landing-mobile .create-account .social-login li.facebook {
           background: #3b5998; }
         #landing-mobile .create-account .social-login li.google {
@@ -477,6 +512,28 @@
         top: -2px; }
     #landing-mobile .create-account .email-login input {
       font-weight: 300; }
+    #landing-mobile .create-account .login {
+      color: white;
+      margin-top: 10px; }
+      #landing-mobile .create-account .login a {
+        color: white;
+        text-decoration: underline; }
+    @media (min-width: 500px) {
+      #landing-mobile .create-account {
+        max-width: 420px; }
+        #landing-mobile .create-account h5 {
+          font-size: 18px; }
+          #landing-mobile .create-account h5 span {
+            display: inline-block;
+            font-size: 18px; } }
+    @media (min-width: 700px) {
+      #landing-mobile .create-account h5 {
+        font-size: 22px; }
+        #landing-mobile .create-account h5 span {
+          font-size: 22px; } }
+    @media (min-width: 1000px) {
+      #landing-mobile .create-account {
+        display: none; } }
   #landing-mobile nav {
     position: fixed;
     top: 0;
@@ -498,6 +555,9 @@
         text-decoration: underline; }
   #landing-mobile .contenedor {
     padding: 20px; }
+    @media (min-width: 1000px) {
+      #landing-mobile .contenedor {
+        padding-right: 380px; } }
   #landing-mobile .landing-header {
     padding: 10px 0;
     position: relative; }
@@ -558,10 +618,6 @@
     #landing-mobile .landing-header h1, #landing-mobile .landing-header h2 {
       color: white;
       z-index: 999; }
-    #landing-mobile .landing-header .divider {
-      width: 100px;
-      height: 4px;
-      background: white; }
     #landing-mobile .landing-header h1 {
       text-transform: uppercase;
       font-size: 20px;
@@ -571,6 +627,23 @@
       #landing-mobile .landing-header h1 strong {
         font-weight: 700;
         font-size: 26px; }
+    @media (min-width: 768px) {
+      #landing-mobile .landing-header {
+        padding: 50px 0; }
+        #landing-mobile .landing-header h1 {
+          font-size: 30px;
+          margin-bottom: 50px; }
+          #landing-mobile .landing-header h1 strong {
+            font-size: 36px; }
+        #landing-mobile .landing-header .logo img {
+          min-width: 150px; } }
+    @media (min-width: 1000px) {
+      #landing-mobile .landing-header h1 {
+        font-size: 40px; }
+        #landing-mobile .landing-header h1 strong {
+          font-size: 46px; }
+      #landing-mobile .landing-header .logo img {
+        min-width: 180px; } }
   #landing-mobile #buscador {
     text-align: center; }
     #landing-mobile #buscador h2 {
@@ -597,23 +670,55 @@
         #landing-mobile #buscador .buscador input[type="submit"] {
           background: #007DA7;
           color: white; }
-  #landing-mobile .datos h2 {
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-bottom: 20px; }
-  #landing-mobile .datos .empresas {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
-    #landing-mobile .datos .empresas li {
-      flex: 1;
-      max-width: 140px;
-      padding: 0 5px;
-      max-height: 60px;
-      min-width: 90px;
+    @media (min-width: 768px) {
+      #landing-mobile #buscador h2 {
+        color: white;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px; }
+      #landing-mobile #buscador h5, #landing-mobile #buscador h6 {
+        display: block;
+        font-size: 18px;
+        font-family: "Roboto";
+        color: white;
+        font-weight: 400; }
+      #landing-mobile #buscador h6 {
+        font-size: 16px; }
+      #landing-mobile #buscador input {
+        border: none;
+        border-radius: 0;
+        background: white;
+        box-shadow: none;
+        max-width: 400px; }
+        #landing-mobile #buscador input[type="submit"] {
+          background: #007DA7;
+          color: white; } }
+  #landing-mobile .datos {
+    text-align: center; }
+    #landing-mobile .datos h2 {
+      font-size: 16px;
+      text-transform: uppercase;
       margin-bottom: 20px; }
+    #landing-mobile .datos .empresas {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      #landing-mobile .datos .empresas li {
+        flex: 1;
+        max-width: 140px;
+        min-width: 140px;
+        padding: 0 5px;
+        max-height: 60px;
+        margin-bottom: 20px; }
+    @media (min-width: 1000px) {
+      #landing-mobile .datos h2 {
+        font-size: 23px; }
+      #landing-mobile .datos .empresas li {
+        max-width: 150px;
+        min-width: 150px; } }
   #landing-mobile .como-funciona {
     text-align: center; }
     #landing-mobile .como-funciona h2 {
@@ -621,6 +726,35 @@
       font-size: 18px;
       text-transform: uppercase;
       margin-bottom: 20px; }
+    #landing-mobile .como-funciona .descripcion {
+      color: white;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300; }
+      #landing-mobile .como-funciona .descripcion strong {
+        font-weight: 700; }
+    @media (min-width: 1000px) {
+      #landing-mobile .como-funciona {
+        padding: 40px 0; }
+        #landing-mobile .como-funciona .columnas {
+          display: flex;
+          margin: 0 -15px; }
+          #landing-mobile .como-funciona .columnas > div {
+            flex: 1;
+            padding: 0 15px; }
+        #landing-mobile .como-funciona h2 {
+          font-size: 22px;
+          color: #01A8E9;
+          text-align: left;
+          margin-top: 0;
+          margin-bottom: 15px; }
+        #landing-mobile .como-funciona .descripcion {
+          font-size: 15px;
+          line-height: 30px;
+          font-weight: 300; }
+          #landing-mobile .como-funciona .descripcion strong {
+            font-weight: 700; } }
   #landing-mobile #ofertas-por-area .categorias {
     padding: 0;
     list-style: none;
@@ -628,9 +762,9 @@
     flex-wrap: wrap; }
     #landing-mobile #ofertas-por-area .categorias li {
       flex: 1;
-      min-width: 400px; }
+      min-width: 300px; }
     #landing-mobile #ofertas-por-area .categorias h2 {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 300;
       margin: 5px;
       color: #333; }
@@ -645,6 +779,19 @@
   #landing-mobile #ofertas-por-area .see-all h2 {
     color: #01A8E9;
     text-decoration: underline; }
+  @media (min-width: 1000px) {
+    #landing-mobile #ofertas-por-area .categorias li {
+      min-width: 33%; } }
+  #landing-mobile .solo-mobile {
+    display: block; }
+    @media (min-width: 1000px) {
+      #landing-mobile .solo-mobile {
+        display: none; } }
+  #landing-mobile .solo-web {
+    display: none; }
+    @media (min-width: 1000px) {
+      #landing-mobile .solo-web {
+        display: block; } }
 
 #wizard {
   font-family: "Rubik";

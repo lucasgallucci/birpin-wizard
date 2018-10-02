@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
 
 #landing, html{
 	height: 100%;
@@ -388,14 +387,15 @@
 
     .create-account-box{
         position: fixed;
-        bottom: -510px;
+        bottom: -520px;
         width: 100%;
         margin: auto;
         text-align: center;
-        background: rgba(255,255,255,0.9);
+        background: rgba(0,0,0,0.8);
         padding: 20px;
         transition: 1s;
         z-index: 9999;
+        color: white;
         &.mostrar{
             bottom: -320px;
         }
@@ -418,6 +418,15 @@
             }
         }
 
+        .login{
+            color: white;
+            margin-top: 10px;
+            a{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
         .cerrar{
             position: absolute;
             top: 10px;
@@ -431,15 +440,15 @@
             justify-content: center;
             li{
                 color: white;
-                width: 40px;
-                height: 40px;
+                width: 45px;
+                height: 45px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
                 margin: 0 10px;
                 ion-icon{
-                    font-size: 20px;
+                    font-size: 25px;
                 }
                 &.facebook{
                     background: $facebook;
@@ -465,7 +474,7 @@
         .email-login{
             .title{
                 display: block;
-                color: #777;
+                color: white;
                 text-align: left;
                 margin-bottom: 10px;
                 ion-icon{
@@ -480,6 +489,45 @@
 
             input{
                 font-weight: 300;
+            }
+        }
+
+        @media (min-width: 1000px){
+            bottom: auto !important;
+            position: fixed;
+            width: 330px;
+            top: 20px;
+            right: 20px;
+            padding-bottom: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            color: #333;
+            h5{
+                font-size: 20px;
+                span{
+                    font-size: 20px;
+                    display: block;
+                }
+            }
+            .crear-mail{
+                display: none;
+            }
+
+            .email-login{
+                .title{
+                    color: #333;
+                }
+            }
+
+            .login{
+                color: #333;
+                margin-top: 10px;
+                a{
+                    color: #333;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -529,6 +577,7 @@
                 font-size: 16px;
                 font-weight: 400;
                 margin-top: 5px;
+                display: block;
             }
         }
         .social-login{
@@ -538,15 +587,15 @@
             justify-content: center;
             li{
                 color: white;
-                width: 40px;
-                height: 40px;
+                width: 45px;
+                height: 45px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
                 margin: 0 10px;
                 ion-icon{
-                    font-size: 20px;
+                    font-size: 25px;
                 }
                 &.facebook{
                     background: $facebook;
@@ -590,6 +639,39 @@
                 font-weight: 300;
             }
         }
+
+        .login{
+            color: white;
+            margin-top: 10px;
+            a{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        @media (min-width: 500px){
+            max-width: 420px;
+            h5{
+                font-size: 18px;
+                span{
+                    display: inline-block;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        @media (min-width: 700px){
+            h5{
+                font-size: 22px;
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+
+        @media (min-width: 1000px){
+            display: none;
+        }
     }
 
     nav{
@@ -617,13 +699,15 @@
 
     .contenedor{
         padding: 20px;
+        @media (min-width: 1000px){
+            padding-right: 380px;
+        }
     }
 
     .landing-header{
         padding: 10px 0;
         position: relative;  
-        
-        
+    
         .back{
             position: absolute;
             top: 0;
@@ -644,35 +728,35 @@
                 left: 0;
 
             
-            &.b1{
-                background-image: url("../img/b1.jpg");
-                background-position: left;
+                &.b1{
+                    background-image: url("../img/b1.jpg");
+                    background-position: left;
+                }
+                &.b2{
+                    background-image: url("../img/b2.jpg");
+                    background-position: left;
+                    animation-delay: 1600ms;
+                }
+                &.b3{
+                    background-image: url("../img/b3.jpg");
+                    background-position: left;
+                    animation-delay: 3200ms;
+                }
+                &.b4{
+                    background-image: url("../img/b4.jpg");
+                    background-position: center;
+                    animation-delay: 4800ms;
+                }
+                &.b5{
+                    background-image: url("../img/b5.jpg");
+                    animation-delay: 6000ms;
+                }
+                &.b6{
+                    background-image: url("../img/b6.jpg");
+                    background-position: right;
+                    animation-delay: 7200ms;
+                }
             }
-            &.b2{
-                background-image: url("../img/b2.jpg");
-                background-position: left;
-                animation-delay: 1600ms;
-            }
-            &.b3{
-                background-image: url("../img/b3.jpg");
-                background-position: left;
-                animation-delay: 3200ms;
-            }
-            &.b4{
-                background-image: url("../img/b4.jpg");
-                background-position: center;
-                animation-delay: 4800ms;
-            }
-            &.b5{
-                background-image: url("../img/b5.jpg");
-                animation-delay: 6000ms;
-            }
-            &.b6{
-                background-image: url("../img/b6.jpg");
-                background-position: right;
-                animation-delay: 7200ms;
-            }
-        }
         }
         
         @keyframes slide{
@@ -711,12 +795,6 @@
             z-index: 999;
         }
 
-        .divider{
-            width: 100px;
-            height: 4px; 
-            background: white;
-        }
-
         h1{
             text-transform: uppercase;
             font-size: 20px;
@@ -727,6 +805,38 @@
                 font-weight: 700;
                 font-size: 26px;
 
+            }
+        }
+
+        @media (min-width: 768px){
+            padding: 50px 0; 
+            h1{
+                font-size: 30px;
+                margin-bottom: 50px;
+                strong{
+                    font-size: 36px; 
+                }
+            }
+
+            .logo{
+                img{
+                    min-width: 150px;
+                }
+            }
+        }
+
+        @media (min-width: 1000px){
+            h1{
+                font-size: 40px;
+                strong{
+                    font-size: 46px; 
+                }
+            }
+
+            .logo{
+                img{
+                    min-width: 180px;
+                }
             }
         }
     }
@@ -755,7 +865,6 @@
         }
 
         .buscador{
-
             display: flex;
             margin-bottom: 15px;
             input{
@@ -769,10 +878,45 @@
                 }
             }
         }
+
+        @media (min-width: 768px){
+            h2{
+                color: white;
+                font-size: 22px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                
+            }  
+
+            h5, h6{
+                display: block;
+                font-size: 18px;
+                font-family: $text-font;
+                color: white;
+                font-weight: 400;
+            }
+
+            h6{
+                font-size: 16px;
+            }
+
+            input{
+                border: none;
+                border-radius: 0;
+                background: white;
+                box-shadow: none;
+                max-width: 400px;
+                &[type="submit"]{
+                    background: $color2;
+                    color: white;
+                }
+            }
+        }
     }
 
 
     .datos{
+        text-align: center;
         h2{
             font-size: 16px;
             text-transform: uppercase;
@@ -784,14 +928,26 @@
             list-style: none;
             display: flex; 
             align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
             li{
                 flex: 1;
                 max-width: 140px;
+                min-width: 140px;
                 padding:0 5px;
                 max-height: 60px;
-                min-width: 90px;
                 margin-bottom: 20px;
+            }
+        }
+        @media (min-width: 1000px){
+            h2{
+                font-size: 23px; 
+            }
+            .empresas{ 
+                li{
+                    max-width: 150px;
+                    min-width: 150px;
+                }
             }
         }
     }
@@ -805,7 +961,45 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             
-        }  
+        }
+
+        .descripcion{
+            color: white;
+            text-align: left;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            strong{
+                font-weight: 700;
+            }
+        }
+
+        @media (min-width: 1000px){
+            padding: 40px 0;
+            .columnas{
+            display: flex;
+            margin: 0 -15px;
+                >div{
+                    flex: 1;
+                    padding: 0 15px;
+                }
+            }
+            h2{
+                font-size: 22px;
+                color: $color3;
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+            .descripcion{
+                font-size: 15px;
+                line-height: 30px;
+                font-weight: 300;
+                strong{
+                    font-weight: 700;
+                }
+            }
+        }
     }
 
     #ofertas-por-area{
@@ -816,10 +1010,10 @@
             flex-wrap: wrap;
             li{
                 flex: 1;
-                min-width: 400px;
+                min-width: 300px;
             }
             h2{
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 300;
                 margin: 5px;
                 color: #333;
@@ -841,6 +1035,27 @@
                 text-decoration: underline;
             }
         }
+
+        @media (min-width: 1000px){
+            .categorias{
+                li{
+                     min-width: 33%;
+                }
+            }
+        }
     }
 
+    .solo-mobile{
+        display: block;
+        @media (min-width: 1000px){
+            display: none;
+        }
+    }
+
+    .solo-web{
+        display: none;
+        @media (min-width: 1000px){
+            display: block;
+        }
+    }
 }
